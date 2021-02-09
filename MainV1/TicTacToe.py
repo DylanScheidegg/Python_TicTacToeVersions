@@ -41,7 +41,7 @@ class TicTacToe(object):
         if self.turnCnt <= 8:
             run = True
             while run:
-                self.loc = int(input("Playerc{} - Pick location of piece: 1-9: ".format(self.plyr)))
+                self.loc = int(input("Player {} - Pick location of piece: 1-9: ".format(self.plyr)))
                 # self.loc = random.randint(1, 9)
                 if self.board[self.loc - 1] == 3:
                     print("Player {} picked a location: {}".format(self.plyr, self.loc))
